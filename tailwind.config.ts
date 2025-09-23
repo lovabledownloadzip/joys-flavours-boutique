@@ -57,6 +57,33 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Joy's Flavours Brand Colors
+        bakery: {
+          green: "hsl(var(--bakery-green))",
+          "green-light": "hsl(var(--bakery-green-light))",
+          cream: "hsl(var(--bakery-cream))",
+          brown: "hsl(var(--bakery-brown))",
+          "brown-light": "hsl(var(--bakery-brown-light))",
+        },
+      },
+      fontFamily: {
+        heading: "var(--font-heading)",
+        body: "var(--font-body)",
+        sans: ["Poppins", "sans-serif"],
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-accent": "var(--gradient-accent)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        card: "var(--shadow-card)",
+        hover: "var(--shadow-hover)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
+        bounce: "var(--transition-bounce)",
       },
       borderRadius: {
         lg: "var(--radius)",

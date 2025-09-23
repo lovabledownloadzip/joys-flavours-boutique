@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Joy's Flavours Design System - Premium Vegan Bakery
+All colors are HSL for perfect theming. Inspired by nature and elegance.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Joy's Flavours Brand Colors */
+    --bakery-green: 130 30% 55%;        /* #6BAA75 - Fresh, natural */
+    --bakery-green-light: 130 35% 75%;  /* Lighter green for accents */
+    --bakery-cream: 40 65% 92%;         /* #F5E6CC - Warm, cozy cream */
+    --bakery-brown: 25 35% 45%;         /* #8B5E3C - Rich, earthy */
+    --bakery-brown-light: 25 25% 65%;   /* Lighter brown for text */
+    
+    /* Core Theme Colors */
+    --background: 40 65% 98%;           /* Very light cream background */
+    --foreground: 25 35% 15%;           /* Deep brown for text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;                  /* Pure white cards */
+    --card-foreground: 25 35% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 35% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 130 30% 55%;             /* Bakery green as primary */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 65% 92%;            /* Bakery cream as secondary */
+    --secondary-foreground: 25 35% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 40% 95%;                /* Subtle cream for muted elements */
+    --muted-foreground: 25 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 25 35% 45%;               /* Bakery brown for accents */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 40 30% 88%;               /* Soft cream borders */
+    --input: 40 30% 88%;
+    --ring: 130 30% 55%;                /* Green focus rings */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;                  /* Slightly more rounded */
+    
+    /* Custom Brand Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--bakery-green)) 0%, hsl(var(--bakery-green-light)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--bakery-cream)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--bakery-brown)) 0%, hsl(var(--bakery-brown-light)) 100%);
+    
+    /* Typography Scale */
+    --font-heading: 'Caveat', cursive;
+    --font-body: 'Poppins', sans-serif;
+    
+    /* Elegant Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(var(--bakery-green) / 0.1);
+    --shadow-card: 0 8px 25px -5px hsl(var(--bakery-brown) / 0.15);
+    --shadow-hover: 0 12px 30px -8px hsl(var(--bakery-green) / 0.25);
+    
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
